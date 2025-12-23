@@ -15,11 +15,12 @@ class JobCreate(BaseModel):
     title: str
     description: str
     location: str
-    company_id: int
+    company: str
     is_remote: Optional[bool] = False
     posted_at: str
     job_url: str
-
+    applications_count: int
+    
 class JobOut(BaseModel):
     id: int
     title: str
